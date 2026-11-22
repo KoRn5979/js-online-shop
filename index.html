@@ -1,0 +1,51 @@
+<!--CST 310 - JavaScript Online Shop-->
+<!--Instructor: Nelson Stewart-->
+<!--Student: Christopher Crawley-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Life Shop</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #20352e; background: #f6f7f3; }
+    header { background: #244c3e; color: white; padding: 18px 7%; }
+    nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    nav a { color: white; text-decoration: none; margin-left: 20px; }
+    main { max-width: 850px; margin: 55px auto; padding: 0 24px; }
+    .product { background: white; border: 1px solid #dce4db; border-radius: 12px; padding: 28px; }
+    .price { font-size: 1.4rem; font-weight: bold; }
+    footer { text-align: center; padding: 30px; color: #54665b; }
+  </style>
+  <link rel="icon" type="image/png" href="favicon-transparent.png">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <strong>Lab Life Shop</strong>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </nav>
+  </header>
+  <main id="home">
+    <img src="lab.jpg" alt="Labrador Retriever Banner" width="900" height="450">
+    <h1>Welcome to Lab Life Shop</h1>
+    <p>Practical accessories for Labrador lovers.</p>
+    <section id="shop" class="product" aria-labelledby="product-heading">
+      <h2 id="product-heading">Labrador Retriever Collar</h2>
+      <img src="collar.jpg" alt="Labrador Retriever collar" width="300" >
+      <p>Durable everyday collar for your four-legged companion.</p>
+      <p class="price">$24.99</p>
+      <p>Category: Dog Accessories</p>
+      <p>Availability: In stock</p>
+      <p><em>Shopping cart functionality will be added in a future week.</em></p>
+    </section>
+    <section id="cart"><h2>Your Cart</h2><p>Your cart is currently empty.</p></section>
+  </main>
+  <footer>Lab Life Shop — CST310 JavaScript Online Shop Project</footer>
+</body>
+</html>
